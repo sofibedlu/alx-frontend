@@ -56,10 +56,6 @@ body, a {
     color: var(--color-primary);
 }
 
-a {
-    text-decoration: none;
-}
-
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
@@ -73,6 +69,10 @@ a {
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
+
+a[href] {
+    text-decoration: none; /* Remove default underline */
+}  
 
 a[href]:visited {
     font-style: italic;
