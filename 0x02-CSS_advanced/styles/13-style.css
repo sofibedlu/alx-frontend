@@ -44,8 +44,24 @@ body, a {
     color: var(--text-color);
 }
 
+.visually-hidden {
+    display: none;
+}
+
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+.card-category, .section-tagline {
+    color: var(--color-primary);
+}
+
 a {
     text-decoration: none;
+}
+
+a[href] {
+    color: var(--text-color);
 }
 
 a[href]:visited {
@@ -58,18 +74,6 @@ a[href]:hover {
 
 a[href]:active {
     background-color: var(--color-light-grey);
-}
-
-.visually-hidden {
-    display: none;
-}
-
-.section-header {
-    text-align: var(--section-header-align);
-}
-
-.card-category, .section-tagline {
-    color: var(--color-primary);
 }
 
 .section-title {
