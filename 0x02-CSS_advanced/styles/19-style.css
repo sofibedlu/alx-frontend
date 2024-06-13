@@ -297,10 +297,6 @@ a:active {
     padding: var(--footer-padding);
 }
 
-.navbar-menu {
-    float: right;
-}
-
 .navbar-menu .nav {
     margin: 0;
     padding: 0;
@@ -324,6 +320,10 @@ a:active {
 
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
+}
+
+.navbar-menu {
+    float: right;
 }
 
 ul.row {
@@ -351,5 +351,5 @@ ul.row {
 }
 
 .footer ul {
-    text-align: center;
+    text-align: right;
 }
