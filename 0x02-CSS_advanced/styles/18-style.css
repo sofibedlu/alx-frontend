@@ -295,17 +295,8 @@ a:active {
     padding: var(--footer-padding);
 }
 
-/* Clearfix Hack */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .navbar-menu {
     float: right;
-    /* Apply clearfix */
-    overflow: hidden;
 }
 
 .nav {
