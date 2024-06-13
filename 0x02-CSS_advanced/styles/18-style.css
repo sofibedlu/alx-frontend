@@ -295,7 +295,7 @@ a:active {
     padding: var(--footer-padding);
 }
 
-header .navbar-menu {
+.navbar-menu {
     float: right;
 }
 
