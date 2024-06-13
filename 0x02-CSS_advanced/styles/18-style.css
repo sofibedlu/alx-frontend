@@ -195,9 +195,9 @@ template{
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-letter-spacing: calc(4% * 1rem);
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 3erm;
+    --nav-item-margin: 0 0 calc(3 * 1rem) 0;
     --nav-item-link-hover: var(--color-primary);
 }
 
@@ -317,7 +317,7 @@ nav .nav-item {
 
 nav .nav-link {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: calc(0.5 * 1rem) 1rem;
 }
 
 nav .nav-link:hover {
