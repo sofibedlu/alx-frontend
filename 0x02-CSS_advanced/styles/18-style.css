@@ -295,18 +295,22 @@ a:active {
     padding: var(--footer-padding);
 }
 
-.navbar-menu {
-    float: right;
+/* Clearfix Hack */
+.navbar-menu::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.nav {
+.navbar-menu .nav {
+    float: right;
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
 }
 
-nav .nav-item {
+.navbar-menu .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -315,11 +319,16 @@ nav .nav-item {
     margin: var(--nav-item-margin);
 }
 
-nav .nav-link {
+.navbar-menu .nav-link {
     display: block;
     padding: 0.5rem 1rem;
 }
 
 nav .nav-link:hover {
     color: var(--nav-item-link-hover);
+}
+
+/* Ensuring clearfix is applied to the parent nav container */
+.navbar-menu {
+    overflow: hidden;
 }
