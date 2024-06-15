@@ -571,3 +571,10 @@ ul.row {
 .card-work .card-inner {
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
+
+.footer-nav-link, .social-item {
+    font-size: var(--font-size-small);
+    padding: 0.5rem;
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-regular);
+}
